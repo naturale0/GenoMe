@@ -34,13 +34,6 @@ lcoholism. | 60.2% of JPT
 - `Geno.type_id(rsid)` prints out specific SNP of input rsid and its related trait written in SNPedia.
 
 ```python
->>> from MyGeno import Geno
->>> g = Geno("/path/to/your/raw/data.txt")
-```
-
-- `Geno.report_wellness()` prints out wellness report provided by 23andMe API.
-
-```python
 >>> g.type_id("rs28897696")
 ```
 ```
