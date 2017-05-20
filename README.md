@@ -77,3 +77,15 @@ rs2073963 | G;G | 2.5 | increased risk of baldness | 18.6% of JPT
 rs1511061 | T;T |  | --% of JPT
  * more details at https://www.snpedia.com/index.php/baldness
 ```
+
+
+## Reference Population
+You can also change the population used to report genotype ratio, other than 'JPT'. `report_wellness`, `type_id`, and `type_trait` supports `ref_population` option to input population code.
+
+```python
+>>> g.report_wellness(ref_population="CEU")
+>>> g.type_id("rs28897696", ref_population="CHB")
+>>> g.type_trait("baldness", ref_population="ASW")
+```
+
+For more information about populations and their code, see [this page](http://www.internationalgenome.org/faq/which-populations-are-part-your-study/).

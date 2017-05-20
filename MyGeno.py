@@ -41,7 +41,7 @@ class Geno(object):
         # search this at snpedia
         snpedia_report, g_percent = _search_rsid(rsid, genotype, ref_population)
         snpedia_report = snpedia_report.strip()
-        print rsid, "|", genotype, "|", snpedia_report, "|", "{}% of JPT".format(g_percent)
+        print rsid, "|", genotype, "|", snpedia_report, "|", "{}% of {}".format(g_percent, ref_population)
 
         return mine
 
@@ -99,7 +99,7 @@ class Geno(object):
                         print "  rsID:", rsid_report
                         print "  Yours:", genotype, "- homozygous"
                         if ("There is currently no text" not in snpedia_report) and (snpedia_report.strip() != ""):
-                            print "  Detail:", snpedia_report.strip(), "|", "{}% of JPT".format(geno_percent)
+                            print "  Detail:", snpedia_report.strip(), "|", "{}% of {}".format(geno_percent, ref_population)
                         print "\n\n"
 
 def _search_rsid(rsid, genotype, ref_population="JPT"):
