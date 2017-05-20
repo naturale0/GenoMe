@@ -39,8 +39,7 @@ lcoholism. | 60.2% of JPT
 ```
 rs28897696 | G;G | 0 | normal | 0.0% of JPT
 ```
-<div>
-<table border="1" class="dataframe">
+<table border="1">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -60,7 +59,6 @@ rs28897696 | G;G | 0 | normal | 0.0% of JPT
 </tr>
 </tbody>
 </table>
-</div>
 
 - `Geno.type_trait(trait)` prints out all SNPs related to input trait, written in SNPedia.
 
