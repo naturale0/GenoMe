@@ -1,9 +1,9 @@
-# MyGeno: interpret your 23andMe data
-MyGeno is a Python module which reads and interprets 23andMe raw genotype data. It Support simple wellness report from 23andMe, and searching your genotype with related traits at SNPedia.
+# GenoMe: interpret your 23andMe data
+GenoMe is a Python module which reads and interprets 23andMe raw genotype data. It Support simple wellness report from 23andMe, and searching your genotype with related traits at SNPedia.
 
 ## Quick-look
 ```python
->>> from MyGeno import Geno
+>>> from GenoMe import Geno
 >>> g = Geno("/path/to/your/raw/data.txt")
 ```
 
