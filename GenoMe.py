@@ -97,7 +97,7 @@ class Geno(object):
                         print with_detail.ix["markers"].details[j]["biological_explanation"].strip()
                         print
                         print "  rsID:", rsid_report
-                        print "  Yours:", genotype, "- homozygous"
+                        print "  Yours:", genotype
                         if ("There is currently no text" not in snpedia_report) and (snpedia_report.strip() != ""):
                             print "  Detail:", snpedia_report.strip(), "|", "{}% of {}".format(geno_percent, ref_population)
                         print "\n\n"
